@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Portfolio</title>
+    <title>Flavio A Campos - Portfolio</title>
     <style>
       * {
         margin: 0;
@@ -23,6 +23,7 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
+        padding-bottom: 120px; /* Prevent content from being hidden behind the fixed footer */
       }
 
       .header {
@@ -187,14 +188,26 @@
       }
 
       .footer {
+        width: 100vw;
+        box-sizing: border-box;
+        position: fixed;
+        left: 0;
+        bottom: 0;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 0 1rem 0;
         color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        z-index: 100;
       }
 
       .social-links {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 1rem;
         margin-bottom: 1rem;
       }
@@ -252,10 +265,10 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1>Your Name</h1>
+        <h1>Flavio A. Campos</h1>
         <p>
-          Full Stack Developer passionate about creating innovative solutions
-          and beautiful user experiences.
+          I'm a Software Engineer that enjoys interacting with data and solving
+          complex problems.
         </p>
       </header>
 
@@ -267,18 +280,18 @@
               <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" />
             </svg>
           </div>
-          <h3 class="project-title">Web Application</h3>
+          <h3 class="project-title">Clinical Trial Insights</h3>
           <p class="project-description">
-            A modern web application built with React and Node.js. Features user
-            authentication, real-time updates, and responsive design.
+            Web app for analyzing, monitoring and web scraping data from
+            clinicaltrials.gov
           </p>
           <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scrapy</span>
+            <span class="tech-tag">Docker</span>
           </div>
           <a
-            href="https://github.com/yourusername/project1"
+            href="https://github.com/FlavioACampos/clinical-trial-insights"
             class="project-link"
             target="_blank"
           >
@@ -300,18 +313,17 @@
               />
             </svg>
           </div>
-          <h3 class="project-title">Mobile App</h3>
+          <h3 class="project-title">Price Scraping System</h3>
           <p class="project-description">
-            Cross-platform mobile application developed with Flutter. Includes
-            offline functionality and smooth animations.
+            Web scraping project to track the prices of different retailer
+            websites.
           </p>
           <div class="project-tech">
-            <span class="tech-tag">Flutter</span>
-            <span class="tech-tag">Dart</span>
-            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scrapy</span>
           </div>
           <a
-            href="https://github.com/yourusername/project2"
+            href="https://github.com/FlavioACampos/price-scraping"
             class="project-link"
             target="_blank"
           >
@@ -333,18 +345,17 @@
               />
             </svg>
           </div>
-          <h3 class="project-title">Data Analytics Tool</h3>
+          <h3 class="project-title">Plans by weather</h3>
           <p class="project-description">
-            Python-based data analysis tool with interactive visualizations and
-            machine learning capabilities for business insights.
+            App to make plans according to the weather forecast using web
+            scraping..
           </p>
           <div class="project-tech">
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">Plotly</span>
+            <span class="tech-tag">Scrapy</span>
           </div>
           <a
-            href="https://github.com/yourusername/project3"
+            href="https://github.com/FlavioACampos/plans-by-weather"
             class="project-link"
             target="_blank"
           >
@@ -356,111 +367,10 @@
             </svg>
           </a>
         </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM13 19H11V17H13V19ZM15.07 11.25L14.17 12.17C13.45 12.9 13 13.5 13 15H11V14.5C11 13.4 11.45 12.4 12.17 11.67L13.41 10.41C13.78 10.05 14 9.55 14 9C14 7.9 13.1 7 12 7S10 7.9 10 9H8C8 6.79 9.79 5 12 5S16 6.79 16 9C16 9.88 15.64 10.68 15.07 11.25Z"
-              />
-            </svg>
-          </div>
-          <h3 class="project-title">API Service</h3>
-          <p class="project-description">
-            RESTful API service built with Express.js and PostgreSQL. Includes
-            authentication, rate limiting, and comprehensive documentation.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Express.js</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">JWT</span>
-          </div>
-          <a
-            href="https://github.com/yourusername/project4"
-            class="project-link"
-            target="_blank"
-          >
-            View Project
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM14 17H12L10.5 9.5H9.5L8 17H6L4.5 7H6.5L7.5 14.5H8.5L10 7H11L12.5 14.5H13.5L14.5 7H16.5L15 17Z"
-              />
-            </svg>
-          </div>
-          <h3 class="project-title">Website Portfolio</h3>
-          <p class="project-description">
-            Personal portfolio website showcasing projects and skills. Built
-            with modern CSS Grid and smooth animations.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-          </div>
-          <a
-            href="https://github.com/yourusername/project5"
-            class="project-link"
-            target="_blank"
-          >
-            View Project
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
-              />
-            </svg>
-          </div>
-          <h3 class="project-title">Open Source Library</h3>
-          <p class="project-description">
-            A lightweight JavaScript utility library for common programming
-            tasks. Well-documented with comprehensive test coverage.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Jest</span>
-            <span class="tech-tag">NPM</span>
-          </div>
-          <a
-            href="https://github.com/yourusername/project6"
-            class="project-link"
-            target="_blank"
-          >
-            View Project
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"
-              />
-            </svg>
-          </a>
-        </div>
-      </main>
-
       <footer class="footer">
         <div class="social-links">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/FlavioACampos"
             class="social-link"
             target="_blank"
           >
@@ -471,7 +381,7 @@
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/FlavioACampos"
             class="social-link"
             target="_blank"
           >
@@ -481,7 +391,7 @@
               />
             </svg>
           </a>
-          <a href="mailto:your.email@example.com" class="social-link">
+          <a href="mailto:flavioantoniocampos@gmail.com" class="social-link">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
               <path
                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
@@ -489,9 +399,7 @@
             </svg>
           </a>
         </div>
-        <p>
-          © 2025 Your Name. Built with passion and deployed on GitHub Pages.
-        </p>
+        <p>© 2025 Flavio Campos. Built with GitHub Pages.</p>
       </footer>
     </div>
 
